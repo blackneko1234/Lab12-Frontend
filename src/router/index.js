@@ -12,6 +12,7 @@ import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
 import GStore from '@/store'
 import OrganizerService from '@/services/OrganizerService.js'
+import Login from '@/views/LoginForm.vue'
 
 const routes = [
   {
@@ -90,6 +91,12 @@ const routes = [
     props: true
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+
     path: '/:catchAll(.*)',
     name: 'NotFound',
     component: NotFound
